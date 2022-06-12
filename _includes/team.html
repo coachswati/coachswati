@@ -1,0 +1,39 @@
+<!-- Team Section -->
+    <aside id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading text-muted">About Me</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="row">
+                      <div class="col-sm text-center" alignment=center>
+                          <div class="team-member" alignnment=center>
+                              <img src="img/team/1.jpeg" class="img-responsive img-circle" alt="" width=400>
+                          </div>
+                      </div>
+                      {% for member in site.people %}
+                      <div class="col-sm text-center" alignment=center>
+                          <div class="team-member" alignnment=center>
+                              <ul class="list-inline social-buttons">
+                                  {% for network in member.social %}
+                                  <li>
+                                      <a href="{{ network.url }}">
+                                          <i class="fa fa-brands fa-{{ network.title }} fa-inverse"></i>
+                                      </a>
+                                  </li>
+                                  {% endfor %}
+                              </ul>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                     <p class="text-muted">Hi! I’m Swati and I am a Product, Growth and Performance Coach. I have extensive experience across Product Management, Product Marketing, Growth, and leading high performing teams and orgs. I’ve worked alongside some brilliant leaders within large teams at Google and Meta but have also had a chance to build Products and teams from the ground up at Alibaba and 2 Startups in my career. Having worked at startups myself and mentored many founders in the last few years, I understand the context in which small businesses operate and what they need to grow and scale. I intuitively see the threads of opportunity that wind through a business, and endeavour to bring them together into a coherent whole, help teams extend their thinking, and drive material business advantage. I use this knowledge and practical experience while working with C-suite and leaders today across their Product, growth and most importantly, their people and performance strategy. </p>
+                </div>
+            </div>
+        </div>
+    </aside>
