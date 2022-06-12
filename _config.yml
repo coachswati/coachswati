@@ -1,0 +1,31 @@
+domain: coachswarti.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://coachswati.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /coachswati/   
+
+
+url: raiswati.com
+baseurl: /index
+
+# Site settings
+title: Swati Rai
+email: swatiraicoaching@gmail.com
+description: "Swati Rai Coaching"
+
+
+# Team names, titles and social links
+people:
+- name: Swati Rai
+  pic: 1
+  social:
+    - title: linkedin
+      url: https://sg.linkedin.com/in/swatir
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url:
+
+# Build settings
+markdown: kramdown
+permalink: pretty
